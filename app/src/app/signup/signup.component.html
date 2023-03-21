@@ -1,0 +1,60 @@
+<body>
+  <div class="container">
+
+    <mat-card class="example-card-header mb-2">
+      <p class="header-card-text">SignUp</p>
+    </mat-card>
+    <mat-card class="example-card">
+      <mat-card-content>
+        <div class="row">
+
+
+          <form>
+            <div class="form-group">
+              <!-- <label>Name</label> <br><br> -->
+              <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" class="form-control" id="name"
+                placeholder="Enter Name">
+
+            </div>
+
+            <div class="form-group">
+              <!-- <label>Email</label> -->
+              <br>
+              <input type="text" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control"
+                id="email" placeholder="Enter email">
+
+            </div>
+
+            <div class="form-group">
+              <!-- <label>Contact Number</label> -->
+              <br>
+              <input type="text" [(ngModel)]="contactNumber" [ngModelOptions]="{standalone: true}" class="form-control"
+                id="contactNumber" placeholder="Enter contact number">
+
+            </div>
+
+            <div class="form-group">
+              <!-- <label>Password</label> -->
+              <br>
+              <input type="text" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control"
+                id="password" placeholder="Enter password">
+
+            </div>
+            <div class="button">
+              <button type="submit" class="btn btn-primary mt-4" (click)="save()">Submit</button>
+            </div>
+          </form>
+
+
+
+
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+
+  </div>
+
+
+</body>
